@@ -1,0 +1,200 @@
+
+@import 'variables';
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+	font-family: 'Bitter', serif;
+}
+
+.title{
+    font-size: $base-font-size*6;
+    position: absolute;
+    top: 5%;
+    left: 50%;
+    transform: translate(-50%, 0);
+    font-family: 'Italianno', cursive;
+}
+h2.resultTitle{
+    text-align: center;
+    font-size: $base-font-size*1.8;
+}
+.randomNumberInfo{
+    font-size: $base-font-size*1.5;
+    margin-top: 20px;
+    display: none;
+}
+
+.wrapper{
+    max-width: $max-width;
+    margin: 0 auto;
+    display: flex;
+    height: 100vh;
+}
+.form{
+    background-color: rgb(175, 96, 49);
+    width: 50%;
+    height: 100vh;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: center;
+
+
+    &__wrapper{
+        // border: 1px solid rgb(109, 105, 97);
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-content: center;
+        width: 90%;
+        
+        header{
+            width: 100%;
+            text-align: center;
+            h3{
+                margin-bottom: $main-margin;
+                font-size: $base-font-size*1.5;
+            }
+    
+            h2{
+                font-size: $base-font-size*2;
+                margin-bottom: $main-margin;
+            }
+            input{
+                padding: 15px 25px;
+                border: 1px solid gray;
+                background-color: white;
+                margin-bottom: $main-margin;
+            }
+            .play{
+               cursor: pointer;
+            }
+        }
+
+     p{
+         font-size: $base-font-size*0.9;
+         text-align: center;
+         margin-bottom: $main-margin;
+     }
+
+        
+    .colors{
+        margin-top: 10px;
+        margin-bottom: 20px;
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        width: 100%;
+        flex-wrap: wrap;
+box-sizing: border-box;
+        &__black{
+            background-color: black;
+        }
+        &__red{
+            background-color: red;
+        }
+        &__green{
+            background-color: rgb(21, 116, 29);
+        }
+        div{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 30%;
+            padding: 25px;
+            height: 50px;
+            cursor: pointer;
+            font-size: $base-font-size*0.9;
+            color: white;
+            margin-bottom: 10px;
+            background-color: rgb(15, 34, 146);
+        }
+
+    }
+    button{
+        padding: 20px 30px;
+                border: 1px solid gray;
+                background-color: white;
+                margin-bottom: $main-margin;
+                cursor: pointer;
+    }
+   
+    .noSelected{
+        display: none;
+        width: 100%;
+        margin-top: 10px;
+        text-align: center;
+        color: red;
+    }
+   
+    }
+   
+}
+
+.table{
+    background-color: rgb(34, 126, 38);
+    width: 50%;
+    height: 100vh;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    // align-content: center;
+    align-items: center;
+    // align-self: center;
+
+    &__wrapper{
+        width: 50%;
+        height: 65%;
+        display: flex;
+        flex-wrap: wrap;
+        
+        div:nth-child(1){
+            width: 100%;
+           color: rgb(20, 88, 20);
+        }
+        div.red{
+            width: 33%;
+           color: rgb(189, 15, 15);
+
+        }
+        div.black{
+            width: 33%;
+            color: black;
+        }
+        div.number{
+            flex-grow: 1;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: $base-font-size*1.2;
+            border: 1px solid white;
+            background-color: rgba(28, 170, 35, 0.904);
+            cursor: pointer;
+            font-size: $base-font-size*1.6;
+            &:hover{
+                background-color: rgba(108, 197, 113, 0.904);
+            }
+
+        }
+
+        div.numberClicked{
+            background-color: rgba(108, 197, 113, 0.904);
+        }
+    }
+}
+
+.optionClicked{
+    border: 1px solid white;
+}
+
+
+
+h2{
+    margin-bottom: $main-margin*1.5;
+}
+.choiceText{
+    text-align: center;
+}
